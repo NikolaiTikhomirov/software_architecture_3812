@@ -5,11 +5,11 @@ import java.util.List;
 
 import ModelEliments.Camera;
 import ModelEliments.Flash;
-import ModelEliments.PoligonModel;
+import ModelEliments.PoligonalModel;
 import ModelEliments.Scene;
 
 public class ModelStore implements IModelChanger {
-    public List<PoligonModel> models;
+    public List<PoligonalModel> models;
     public List<Scene> scenes;
     public List<Flash> flashes;
     public List<Camera> cameras;
