@@ -8,14 +8,15 @@ public class Camera {
     public Angle3D angle;
 
     public Camera(){
+        location = new Point3D();
+        angle = new Angle3D();
+    }
+
+    public void rotate(Angle3D anyAngle){
 
     }
 
-    public void rotate(Angle3D angle){
-
-    }
-
-    public void move(Point3D location){
+    public void move(Point3D anyLocation){
         
     }
 }
