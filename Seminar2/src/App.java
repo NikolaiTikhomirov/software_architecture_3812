@@ -18,16 +18,23 @@ public class App {
 
        List<ItemGenerator> generators = new ArrayList<>();
 
-       generators.add(new GoldGenerator());
+       
+       for (int i = 0; i < 3; i++) {
+           generators.add(new GoldGenerator());
+       }
+
        generators.add(new GemGenerator());
-       generators.add(new ApartmentGenerator());
-       generators.add(new CandiesGenerator());
-       generators.add(new CarGenerator());
-       generators.add(new ChickenGenerator());
-       generators.add(new IPhoneGenerator());
+
+       for (int i = 0; i < 10; i++) {
+           generators.add(new ApartmentGenerator());
+           generators.add(new CandiesGenerator());
+           generators.add(new CarGenerator());
+           generators.add(new ChickenGenerator());
+           generators.add(new IPhoneGenerator());
+       }
 
        Random random = ThreadLocalRandom.current();
-       for (int i = 0; i < 10; i++) {
+       for (int i = 0; i < 100; i++) {
             int index = random.nextInt(generators.size());
             generators.get(index).openReward();
        }
