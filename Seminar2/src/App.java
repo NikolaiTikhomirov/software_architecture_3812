@@ -28,7 +28,7 @@ public class App {
 
        Random random = ThreadLocalRandom.current();
        for (int i = 0; i < 10; i++) {
-            int index = random.nextInt(2);
+            int index = random.nextInt(generators.size());
             generators.get(index).openReward();
        }
 
