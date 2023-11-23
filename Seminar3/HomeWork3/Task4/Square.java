@@ -1,16 +1,13 @@
 package Seminar3.HomeWork3.Task4;
 
-public class Square extends Rectangle {
+public class Square {
+    protected int width;
 
-    @Override
     public void setWidth(int width) {
-        super.width = width;
-        super.height = width;
+        this.width = width;
     }
 
-    @Override
-    public void setHeight(int height) {
-        super.width = height;
-        super.height = height;
+    public int area() {
+        return this.width * this.width;
     }
 }
