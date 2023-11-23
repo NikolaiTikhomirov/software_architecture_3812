@@ -1,13 +1,13 @@
 package Seminar3.HomeWork3.Task4;
 
 public class Square {
-    protected int width;
+    private int side;
 
-    public void setWidth(int width) {
-        this.width = width;
+    public void setSide(int side) {
+        this.side = side;
     }
 
     public int area() {
-        return this.width * this.width;
+        return this.side * this.side;
     }
 }

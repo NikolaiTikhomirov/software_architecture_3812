@@ -2,20 +2,19 @@ package Seminar3.HomeWork3.Task4;
 
 // Переписать код в соответствии с Liskov Substitution Principle:
 
-public class Rectangle extends Square{
-    protected int height;
+public class Rectangle extends Shape{
+    private int width;
+    private int height;
 
-    @Override
     public void setWidth(int width) {
-        super.width = width;
+        this.width = width;
     }
 
     public void setHeight(int height) {
         this.height = height;
     }
 
-    @Override
     public int area() {
-        return super.width * this.height;
+        return this.width * this.height;
     }
 }
