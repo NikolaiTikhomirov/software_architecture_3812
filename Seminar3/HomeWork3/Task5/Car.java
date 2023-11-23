@@ -3,9 +3,9 @@ package Seminar3.HomeWork3.Task5;
 // Переписать код в соответствии с Dependency Inversion Principle:
 
 public class Car {
-    private PetrolEngine engine;
+    private Engine engine;
 
-    public Car(PetrolEngine engine) {
+    public Car(Engine engine) {
         this.engine = engine;
     }
 
