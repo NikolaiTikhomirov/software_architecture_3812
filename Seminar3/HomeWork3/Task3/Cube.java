@@ -1,6 +1,6 @@
 package Seminar3.HomeWork3.Task3;
 
-public class Cube implements Shape {
+public class Cube implements Shape3DCalculate {
     private int edge;
 
     public Cube(int edge) {
